@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    background-color: #b8e1ff;
+    border-radius: 30px;
+    width: 10%;
+} 
+span{
+    display: block;
+}
+/* セレクタ */
+button{
+    /*  */
+    display: block;
+    /*  */
+    width: 60%;
+    max-width: 1100px;
+    /*  */
+    margin: 5% auto;
+    padding: 20px 0;
+    /*  */
+    font-size: 1rem;
+}
+/* class */
+/* 
+その他
+*/
+.main-display{
+    margin: 50% auto;
+}
+.three{
+    display: none;
+}
+.submit_loop{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.submit_loop.none{
+    display: none;
+}
+.submit_loop h2{
+    position: absolute;
+    top: 8.5%;
+    left: 24%;
+}
+.loop_true,
+.loop_false{
+    margin: 50px auto;
+    width: 64px;
+    height: 64px;
+}
+.loop_false.none{
+    display: none;
+}
+.now{
+    display: none;
+}
+.now.prepare{
+    display: block;
+    text-align: center;
+}
+.button{
+    display: none;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.button.prepare{
+    /*  */
+    background-color: #fff;
+    /*  */
+    display: block;
+    /*  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /*  */
+    width: 350px;
+    height: 350px;
+}
+.min-button{
+    display: none;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+}
+
+/*  */
+.open{
+    /*  */
+    text-align: center;
+    /*  */
+    width: 80%;
+    max-width: 1400px;
+    /*  */
+    margin: 30px auto;
+    border: 1px solid #000;
+    padding: 20px 0;
+    /*  */
+    font-size: 1.35rem;
+}
+.open.none{
+    display: none;
+}
+.open:nth-of-type(1){
+    background-color: #ff0000;
+    color: #fff;
+}
+.open:nth-of-type(3){
+    background-color: #00ff00;
+    color: #000;
+}
+.open:nth-of-type(5){
+    background-color: #0000ff;
+    color: #fff;
+}
+
+.min-button.prepare{
+    display: block;
+}
+.button.prepare.none{
+    display: none;
+}
+.music.prepare{
+    /*  */
+    display: block;
+    /*  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    /*  */
+    width: 300px;
+    height: 300px;
+    /*  */
+    border: 2px solid #000;
+    border-radius: 50%;
+    /*  */
+    margin: 0 auto 10px;
+}
+.music.none{
+    display: none;
+}
+/* id */
+#loop_true,
+#loop_false{
+    position: absolute;
+    top: 0;
+    left: 43%;
+}
+#loop_true{
+    z-index: -1;
+}
+#loop_false{
+    z-index: 1;
+}
+/*  */
+    /*  */
+    @media (min-width: 1024px) {
+        .main-display{
+            margin: 10% auto;
+        }
+    }
+    /*  */
+    @media (min-width: 768px){
+        .main-display{
+            margin: 30% auto;
+        }
+    };
+    
