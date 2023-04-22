@@ -6,15 +6,7 @@
 body{
     overflow-x: hidden;
 }
-input[type="range"]{
-    -webkit-appearance: none;
-    background-color: #b8e1ff;
-    border-radius: 30px;
-    width: 10%;
-} 
-span{
-    display: block;
-}
+
 /* セレクタ */
 button{
     /*  */
