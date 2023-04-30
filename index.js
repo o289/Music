@@ -319,6 +319,14 @@ const playList = [
         id: 'bgm11',
         v: 'BGM11'
     }),
+    new MusicPlay({
+        id: 'bgm12',
+        v: 'BGM12'
+    }),
+    new MusicPlay({
+        id: 'bgm13',
+        v: 'BGM13'
+    }),
     // 曲
     new MusicPlay({
         id: 'other1',
