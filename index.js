@@ -19,7 +19,6 @@ class MusicPlay{
             stopping.classList.add('prepare')
             Now.classList.add('prepare')
             submit_loop.classList.add('none')
-            id.classList.add('prepare');
             tab.classList.add('none')
         };
         function remove(){
