@@ -162,6 +162,9 @@ button{
     max-width: 600px;
     margin: 0 auto;
 }
+.tab.none{
+    display: none;
+}
 
 .tab-list{
     display: flex;

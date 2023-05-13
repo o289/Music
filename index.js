@@ -14,6 +14,7 @@ class MusicPlay{
         const submit_loop = document.getElementById('submit_loop');
         const Now = document.getElementById('Now');
         const which1 = document.getElementById('which1');
+        const tab = document.getElementById('tab');
 
         // クラス付与
         function add(){
@@ -21,6 +22,7 @@ class MusicPlay{
             stopping.classList.add('prepare')
             Now.classList.add('prepare')
             submit_loop.classList.add('none')
+            tab.classList.add('none')
             hidden1.classList.add('none');
             hidden2.classList.add('none');
             hidden3.classList.add('none');
@@ -29,6 +31,7 @@ class MusicPlay{
             pausing.classList.remove('prepare');
             stopping.classList.remove('prepare');
             Now.classList.remove('prepare')
+            tab.classList.remove('none')
             submit_loop.classList.remove('none')
             hidden1.classList.remove('none');
             hidden2.classList.remove('none');
