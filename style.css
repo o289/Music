@@ -146,6 +146,9 @@ button{
     padding: 8px 0;
     cursor: pointer;
 }
+.tab-list-item.none{
+    display: none;
+}
 
 .tab-contents{
     background-color: #ffede2;
@@ -160,6 +163,9 @@ button{
 
 .is-contents-active{
     display: block;
+}
+.is-contents-active.none{
+    display: none;
 }
 /* ここまで */
 /*  */

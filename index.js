@@ -12,6 +12,7 @@ class MusicPlay{
         const Now = document.getElementById('Now');
         const which1 = document.getElementById('which1');
         const tab = document.getElementById('tab');
+        const nav = tab.querySelectorAll('[data-nav]');
         const cont = tab.querySelectorAll('[data-cont]');
 
         // クラス付与
@@ -35,6 +36,7 @@ class MusicPlay{
             let contCount = 0
             while(contCount < cont.length){
                 cont[contCount].classList.add('none');
+                nav[contCount].classList.add('none')
                 contCount++;
             }
         }
@@ -42,6 +44,7 @@ class MusicPlay{
             let contCount = 0
             while(contCount < cont.length){
                 cont[contCount].classList.remove('none')
+                nav[contCount].classList.remove('none')
                 contCount++;
             }
         }
