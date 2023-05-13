@@ -6,9 +6,6 @@ class MusicPlay{
         const music = document.getElementById(obj.v);
         const pausing = document.getElementById('pause');
         const stopping = document.getElementById('stop');
-        const hidden1 = document.getElementById('hidden1');
-        const hidden2 = document.getElementById('hidden2');
-        const hidden3 = document.getElementById('hidden3');
         const loop_true = document.getElementById('loop_true');
         const loop_false = document.getElementById('loop_false');
         const submit_loop = document.getElementById('submit_loop');
@@ -23,9 +20,6 @@ class MusicPlay{
             Now.classList.add('prepare')
             submit_loop.classList.add('none')
             tab.classList.add('none')
-            hidden1.classList.add('none');
-            hidden2.classList.add('none');
-            hidden3.classList.add('none');
         };
         function remove(){
             pausing.classList.remove('prepare');
@@ -33,9 +27,6 @@ class MusicPlay{
             Now.classList.remove('prepare')
             tab.classList.remove('none')
             submit_loop.classList.remove('none')
-            hidden1.classList.remove('none');
-            hidden2.classList.remove('none');
-            hidden3.classList.remove('none');
             id.classList.remove('prepare');
             id.classList.remove('none');
         }
