@@ -87,36 +87,6 @@ button{
     margin: 0 auto;
 }
 
-/*  */
-.open{
-    /*  */
-    text-align: center;
-    /*  */
-    width: 80%;
-    max-width: 1400px;
-    /*  */
-    margin: 30px auto;
-    border: 1px solid #000;
-    padding: 20px 0;
-    /*  */
-    font-size: 1.35rem;
-}
-.open.none{
-    display: none;
-}
-.open:nth-of-type(1){
-    background-color: #ff0000;
-    color: #fff;
-}
-.open:nth-of-type(3){
-    background-color: #00ff00;
-    color: #000;
-}
-.open:nth-of-type(5){
-    background-color: #0000ff;
-    color: #fff;
-}
-
 .min-button.prepare{
     display: block;
 }
@@ -131,7 +101,7 @@ button{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 0;
     /*  */
     width: 300px;
     height: 300px;
