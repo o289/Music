@@ -10,7 +10,7 @@
 <body>
     <!-- 音楽のデータ -->
     <div id="data">
-        <!--  -->
+        <!-- プロ野球応援歌 -->
         <audio src="https://o289.github.io/Music/audio/cheering1.mp3" id="cheering1"></audio>
         <audio src="https://o289.github.io/Music/audio/cheering2.mp3" id="cheering2"></audio>
         <audio src="https://o289.github.io/Music/audio/cheering3.mp3" id="cheering3"></audio>
@@ -59,7 +59,7 @@
         <audio src="https://o289.github.io/Music/audio/cheering46.mp3" id="cheering46"></audio>
         <audio src="https://o289.github.io/Music/audio/cheering47.mp3" id="cheering47"></audio>
         <audio src="https://o289.github.io/Music/audio/cheering48.mp3" id="cheering48"></audio>
-        <!--  -->
+        <!-- BGM -->
         <audio src="https://o289.github.io/Music/audio/bgm1.mp3" id="BGM1"></audio>
         <audio src="https://o289.github.io/Music/audio/bgm2.mp3" id="BGM2"></audio>
         <audio src="https://o289.github.io/Music/audio/bgm3.mp3" id="BGM3"></audio>
@@ -74,7 +74,7 @@
         <audio src="https://o289.github.io/Music/audio/bgm12.mp3" id="BGM12"></audio>
         <audio src="https://o289.github.io/Music/audio/bgm13.mp3" id="BGM13"></audio>
         <audio src="https://o289.github.io/Music/audio/bgm14.mp3" id="BGM14"></audio>
-        <!--  -->
+        <!-- 曲 -->
         <audio src="https://o289.github.io/Music/audio/song1.mp3" id="artist1"></audio>
         <audio src="https://o289.github.io/Music/audio/song2.mp3" id="artist2"></audio>
         <audio src="https://o289.github.io/Music/audio/song3.mp3" id="artist3"></audio>
@@ -102,6 +102,27 @@
         <button id="loop_false" class="loop_false">OFF</button>
     </div>
     <img src="https://o289.github.io/Music/img/01097.png" alt="pause" id="pause" class="button">
+    <div class="tab">
+        <!-- タブを構成するブロック -->
+        <div class="tab-list">
+            <button class="tab-list-item is-btn-active">タブ1</button>
+            <button class="tab-list-item">タブ2</button>
+            <button class="tab-list-item">タブ3</button>
+        </div>
+        <!-- コンテンツを構成するブロック -->
+        <div class="tab-contents-wrap">
+            <div class="tab-contents is-contents-active">
+                <p>タブメニューテキスト１。タブメニューテキスト１。タブメニューテキスト１。</p>
+            </div>
+            <div class="tab-contents">
+                <p>タブメニューテキスト2。タブメニューテキスト2。タブメニューテキスト2。</p>
+            </div>
+            <div class="tab-contents">
+                <p>タブメニューテキスト3。タブメニューテキスト3。タブメニューテキスト3。</p>
+            </div>
+        </div>
+    </div>
+
     <div class="main-display">
         <div id="hidden1" class="open">応援歌</div>
         <div class="cheering_songs">
@@ -191,6 +212,14 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
         $(function(){
+        // タブメニュー
+        $('.tab-list-item').on('click', function(){
+            let index = $('.tab-list-item').index(this);
+            $('.tab-list-item').removeClass('is-btn-active');
+            $(this).addClass('is-btn-active');
+            $('.tab-contents').removeClass('is-contents-active');
+            $('.tab-contents').eq(index).addClass('is-contents-active');
+        });
         // アコーディオンメニュー
             $('.cheering_songs').css("display", "none")
             $('.BGM').css("display", "none")

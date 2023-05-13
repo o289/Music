@@ -14,7 +14,6 @@ class MusicPlay{
         const submit_loop = document.getElementById('submit_loop');
         const Now = document.getElementById('Now');
         const which1 = document.getElementById('which1');
-        const hamburger = document.getElementById('hamburger');
 
         // クラス付与
         function add(){
@@ -78,9 +77,7 @@ class MusicPlay{
             pause();
             add();
             pausing.classList.remove('none');
-            
             music.play();
-            
         });
         
     }
