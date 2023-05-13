@@ -12,23 +12,38 @@ class MusicPlay{
         const Now = document.getElementById('Now');
         const which1 = document.getElementById('which1');
         const tab = document.getElementById('tab');
+        const cont = tab.querySelectorAll('[data-cont]');
 
         // クラス付与
         function add(){
             pausing.classList.add('prepare')
             stopping.classList.add('prepare')
             Now.classList.add('prepare')
+            contAdd()
             submit_loop.classList.add('none')
-            tab.classList.add('none')
         };
         function remove(){
             pausing.classList.remove('prepare');
             stopping.classList.remove('prepare');
             Now.classList.remove('prepare')
-            tab.classList.remove('none')
             submit_loop.classList.remove('none')
+            contRemove();
             id.classList.remove('prepare');
             id.classList.remove('none');
+        }
+        function contAdd(){
+            let contCount = 0
+            while(contCount < cont.length){
+                cont[contCount].classList.add('none');
+                contCount++;
+            }
+        }
+        function contRemove(){
+            let contCount = 0
+            while(contCount < cont.length){
+                cont[contCount].classList.remove('none')
+                contCount++;
+            }
         }
 
         // 一時停止
