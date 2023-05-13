@@ -95,7 +95,7 @@ button{
 }
 .music.prepare{
     /*  */
-    display: block;
+    display: block !important; 
     /*  */
     position: absolute;
     top: 50%;
