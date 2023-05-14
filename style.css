@@ -158,6 +158,9 @@ button{
     display: none;
     padding: 20px;
 }
+.tab-contents.relative{
+    position: relative;
+}
 
 .is-btn-active{
     background-color: #ffede2;
