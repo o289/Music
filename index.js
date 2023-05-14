@@ -13,6 +13,7 @@ class MusicPlay{
         const which1 = document.getElementById('which1');
         const tab = document.getElementById('tab');
         const nav = tab.querySelectorAll('[data-nav]');
+        const tabCont = tab.querySelectorAll('[data-tab]');
         const cont = tab.querySelectorAll('[data-cont]');
 
         // クラス付与
@@ -33,19 +34,21 @@ class MusicPlay{
             id.classList.remove('none');
         }
         function contAdd(){
-            let contCount = 0
-            while(contCount < cont.length){
-                cont[contCount].classList.add('none');
-                nav[contCount].classList.add('none')
-                contCount++;
+            let Count = 0
+            while(Count < cont.length){
+                cont[Count].classList.add('none');
+                tabCont[Count].classList.add('none')
+                nav[Count].classList.add('none')
+                Count++;
             }
         }
         function contRemove(){
-            let contCount = 0
-            while(contCount < cont.length){
-                cont[contCount].classList.remove('none')
-                nav[contCount].classList.remove('none')
-                contCount++;
+            let Count = 0
+            while(Count < cont.length){
+                cont[Count].classList.remove('none')
+                tabCont[Count].classList.remove('none')
+                nav[Count].classList.remove('none')
+                Count++;
             }
         }
 

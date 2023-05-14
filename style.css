@@ -167,8 +167,11 @@ button{
 .is-contents-active{
     display: block;
 }
-.is-contents-active.none{
-    display: none;
+.tab-contents.is-contents-active.none,
+.tab-contents.none{
+    background-color: transparent;
+    color: transparent;
+    width: 1px;
 }
 /* ここまで */
 /*  */
