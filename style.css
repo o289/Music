@@ -6,7 +6,9 @@
 body{
     overflow-x: hidden;
 }
-
+h2{
+    text-align: center;
+}
 /* セレクタ */
 button{
     /*  */
@@ -171,7 +173,8 @@ button{
     display: block;
 }
 .tab-contents.is-contents-active.none,
-.tab-contents.none{
+.tab-contents.none,
+.tab-contents.relative.none{
     background-color: transparent;
     color: transparent;
     width: 1px;
