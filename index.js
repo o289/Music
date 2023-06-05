@@ -294,6 +294,10 @@ const playList = [
         id: 'cheering_song48',
         v: 'cheering48'
     }),
+    new MusicPlay({
+        id: 'cheering_song49',
+        v: 'cheering49'
+    }),
     // ゲームBGM
     new MusicPlay({
         id: 'bgm1',
