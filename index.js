@@ -99,6 +99,24 @@ class MusicPlay{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 音楽を再生するためのデータを取得
 const playList = [
     // 応援歌
@@ -313,6 +331,14 @@ const playList = [
     new MusicPlay({
         id: 'cheering_song53',
         v: 'cheering53'
+    }),
+    new MusicPlay({
+        id: 'cheering_song54',
+        v: 'cheering54'
+    }),
+    new MusicPlay({
+        id: 'cheering_song55',
+        v: 'cheering55'
     }),
     // ゲームBGM
     new MusicPlay({
