@@ -590,4 +590,12 @@ const playList = [
         id: 'other22',
         v: 'artist22'
     }),
+    new MusicPlay({
+        id: 'other23',
+        v: 'artist23'
+    }),
+    new MusicPlay({
+        id: 'other24',
+        v: 'artist24'
+    }),
 ];
